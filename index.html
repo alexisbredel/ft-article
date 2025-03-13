@@ -6,39 +6,45 @@
     <title>Financial Times - Breaking News</title>
     <style>
         body {
-            font-family: 'Georgia', serif;
+            font-family: 'Financier Display', 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f3e8d0;
+            background-color: #fff1e5;
             color: #333;
         }
         .header {
-            background-color: #ffcc00;
-            padding: 20px;
-            text-align: center;
-            font-size: 28px;
+            background-color: #f3c06d;
+            padding: 15px 20px;
+            font-size: 24px;
             font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            text-decoration: none;
+            color: black;
         }
         .article-container {
-            width: 60%;
+            width: 50%;
             margin: 40px auto;
             background: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .headline {
-            font-size: 32px;
+            font-size: 40px;
             font-weight: bold;
             margin-bottom: 10px;
         }
         .subheadline {
-            font-size: 18px;
+            font-size: 20px;
             color: #666;
             margin-bottom: 20px;
         }
         .article-body {
             font-size: 18px;
-            line-height: 1.6;
+            line-height: 1.8;
         }
         .footer {
             text-align: center;
@@ -46,13 +52,42 @@
             font-size: 14px;
             color: #777;
         }
+        .nav {
+            font-size: 14px;
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="header">Financial Times</div>
+    <div class="header">
+        <a href="#">Financial Times</a>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">World</a>
+            <a href="#">Markets</a>
+            <a href="#">Opinion</a>
+        </div>
+    </div>
     <div class="article-container">
         <div class="headline">Massive Market Shock: [Your Roommate’s Favorite Stock] Plummets 80% Overnight</div>
         <div class="subheadline">Analysts call it "the biggest financial blunder in recent history"</div>
+        <div class="image-placeholder">Image Placeholder</div>
         <div class="article-body">
             <p>In a shocking turn of events, [Stock Name] has experienced a historic collapse, dropping by 80% in overnight trading. Financial analysts are scrambling to understand what led to this unprecedented event.</p>
             <p>"We haven't seen anything like this since 2008," said financial expert John Doe. "This is going to have serious repercussions for investors and the broader economy."</p>
